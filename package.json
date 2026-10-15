@@ -1,0 +1,16 @@
+{
+  "name": "rea-style-library",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "REA-based product design language research and cross-product style transfer skill",
+  "scripts": {
+    "validate": "node tools/validate-skill.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "yaml": "2.9.0"
+  }
+}

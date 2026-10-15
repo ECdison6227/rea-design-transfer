@@ -1,0 +1,4 @@
+_validation/
+node_modules/
+*.log
+*.zip
