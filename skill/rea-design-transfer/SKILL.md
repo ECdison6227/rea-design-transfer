@@ -2,7 +2,8 @@
 name: rea-design-transfer
 description: "Extract a reusable visual design system and core UI interaction patterns from mobile, desktop or web products using REA evidence; deliver a standard design package and apply a selected package to an existing product. Use for design extraction, design-spec libraries and cross-domain UI restyling, not default business-function cloning."
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
+  repository: "https://github.com/ECdison6227/rea-design-transfer"
 ---
 
 # REA 设计提取与迁移

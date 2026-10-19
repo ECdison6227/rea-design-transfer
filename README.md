@@ -2,7 +2,7 @@
 
 技能名：**`rea-design-transfer`**。从喜欢的手机、桌面或网页产品提取视觉设计与通用交互，交付标准设计包；在自己的产品完成功能和普通UI后，选择其中一份规范，对齐其设计语言并保留自己的业务。
 
-本仓库是技能与格式工具包，地址为兼容已有链接保留`ECdison6227/rea-style-library`。研究资料总库独立存放在[rea-ui-library](https://github.com/ECdison6227/rea-ui-library)，沿用该库的平台分类、权限和入库约定。技能包不包含任何产品已研究成功的保证。
+本仓库是技能与格式工具包，当前地址为[ECdison6227/rea-design-transfer](https://github.com/ECdison6227/rea-design-transfer)，原rea-style-library是历史名称。研究资料总库独立存放在[rea-ui-library](https://github.com/ECdison6227/rea-ui-library)，沿用该库的平台分类、权限和入库约定。技能包不包含任何产品已研究成功的保证。
 
 ## 两阶段使用
 
@@ -15,7 +15,7 @@
 把这段交给支持技能安装的Agent：
 
 ```text
-请从 https://github.com/ECdison6227/rea-style-library 安装 skill/rea-design-transfer。
+请从 https://github.com/ECdison6227/rea-design-transfer 安装 skill/rea-design-transfer。
 这是旧rea-style-library技能的新名称；若本机存在旧版，先比较并备份到技能发现目录外，再替换，避免两份同时自动触发。
 研究真实制品时检查reverse-engineer-anything技能和实际REA工具；已有环境不要重装。
 ```
