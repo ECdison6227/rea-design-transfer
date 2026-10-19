@@ -1,79 +1,78 @@
-# REA Style Library · 产品风格库
+# REA 设计提取与迁移
 
-目标：把手机App、桌面软件或网站研究成可复用的产品设计语言。以后把研究仓库和自己软件的源码交给Agent，就能迁移UI规范、交互习惯、用户引导与影响体验的行为，让不同业务的软件像同一家公司做的。
+技能名：**`rea-design-transfer`**。从喜欢的手机、桌面或网页产品提取视觉设计与通用交互，交付标准设计包；在自己的产品完成功能和普通UI后，选择其中一份规范，对齐其设计语言并保留自己的业务。
 
-## 直接复制
+本仓库是技能与格式工具包，地址为兼容已有链接保留`ECdison6227/rea-style-library`。研究资料总库独立存放在[rea-ui-library](https://github.com/ECdison6227/rea-ui-library)，沿用该库的平台分类、权限和入库约定。技能包不包含任何产品已研究成功的保证。
 
-- [通用研究Prompt.md](通用研究Prompt.md)：研究一个来源，创建风格库；不要求安装本封装skill。
-- [改造软件Prompt.md](改造软件Prompt.md)：已有研究库时，直接改自己的软件。
+## 两阶段使用
 
-这两份文档完整表达需求；不要求下一Agent看过本次聊天。原业务功能默认只是观察样本，重点是视觉、行为与引导的一致性，不只提取颜色，也不默认开展底层安全/加密审计。
+**先研究并入库**：提取排版、尺寸/间距、配色/表面、形状/图标、组件及状态、布局组合、关键动效、反馈与引导。原业务作为样本；独特会员卡片也应提取，实际扣费/同步协议/播放内核等不成为默认验收。按设计类型补齐核心缺口，同类样本充分就停止扩展。
 
-研究库必须保留可获取的图标、字体、文字文案、图片、插画、动效等可复用原始资产，并交付来源、用途、状态变体和引用位置清单；加工版本另存，提取缺口明确。弹窗触发、关闭与叠层，以及页面切换、返回和状态保留/重置，都要形成有证据的行为转移记录。迁移时替换业务内容不覆盖研究库原件。
+**后应用到自己的项目**：用户先做功能与普通UI，再提供项目源码、目标平台和选定规范。Agent读取设计入口、保留业务/数据/品牌，沿用目标技术栈映射tokens与组件，再运行并对照代表页面/状态。无需为已有充分证据重跑全包分析。
 
-## Skill调用
+## 安装与调用
 
-安装后可使用 `$rea-style-library`，例如：
-
-```text
-$rea-style-library
-目标：[App名称、安装包路径或网站URL]
-输出目录：[独立研究目录]
-我要把它研究成可迁移的产品风格库，重点是UI规范、交互逻辑、用户引导和体验相关的软件行为，让以后不同业务的软件像同一家公司做的。先检查环境，实际操作目标，再持续推进。
-```
-
-也可以在已有研究上使用：
+把这段交给支持技能安装的Agent：
 
 ```text
-$rea-style-library
-使用迁移模式。
-研究风格库：[仓库路径/链接]
-我的项目：[代码路径/仓库]
-请按库中的证据和规范改造我的软件，保留我的业务、数据与品牌，并验证视觉和行为差异。
+请从 https://github.com/ECdison6227/rea-style-library 安装 skill/rea-design-transfer。
+这是旧rea-style-library技能的新名称；若本机存在旧版，先比较并备份到技能发现目录外，再替换，避免两份同时自动触发。
+研究真实制品时检查reverse-engineer-anything技能和实际REA工具；已有环境不要重装。
 ```
 
-Skill包含明确指令：研究目标时先找到并读取 `reverse-engineer-anything` 技能，再按当前实际工具研究。它不会凭空安装或连接REA，也不把安装skill等同具备所有平台运行能力。只迁移已有规范且证据足够时，不重复跑REA。
-
-积累多个库后，可以先选风格：
+使用新调用名：
 
 ```text
-$rea-style-library
-比较这些研究库：[各仓库链接/路径]
-我的产品是：[平台、业务和用户]
-先根据密度、排版、导航、反馈与用户引导，比较适配程度和改造代价，给我选择依据；选定来源后再改我的项目，不要默认混合所有风格。
+$rea-design-transfer
+提取设计模式。
+来源：[APK/客户端/网站/历史资料]
+输出：[独立目录或总库platforms/<platform>/<id>]
+我要保存整套视觉设计与通用交互，以后用于完全不同业务。
+请交付Design Package v1，围绕核心设计类型研究，不默认穷举原软件业务功能。
 ```
-
-本封装允许正常的自动技能选择；显式写 `$rea-style-library` 更明确。如果其他Agent未发现技能，可直接给它通用研究Prompt，或让它读取本包 `skill/rea-style-library/SKILL.md`。其他环境仍需自行提供相应REA技能与工具。
-
-## 从 GitHub 安装
-
-把下面这段发给支持安装技能的 Agent：
 
 ```text
-请从 https://github.com/ECdison6227/rea-style-library 安装 skill/rea-style-library。
-同时检查 reverse-engineer-anything 技能和相关 REA 工具是否可用；已有工具不要重装。
-如果需要额外安装或修复配置，先说明具体缺口和变更范围。
+$rea-design-transfer
+应用规范模式。
+规范库：[GitHub仓库/ref/来源目录]
+我的项目：[已有功能与普通UI的源码路径]
+请读取design-package.json与DESIGN_SPEC.md，保留我的业务、数据、品牌和技术栈，
+把视觉元素、组件组合和核心交互对齐所选规范，运行并报告实际差异。
 ```
 
-也可克隆仓库后，将 `skill/rea-style-library` 文件夹复制到当前技能目录（通常为 `$CODEX_HOME/skills`，未设置时为 `~/.codex/skills`）。安装目标是包含 `SKILL.md` 的子目录，不是整个仓库。已有同名技能时先比较和备份，再更新。
+仅选型、整理和入库不自动启动原产品或制作新参考。自动技能选择保持启用；跨平台能力以实际工具和可运行目标为准。
 
-依赖为单独安装的 [`reverse-engineer-anything` / REA](https://github.com/morluto/rea)。本仓库提供设计研究流程，不捆绑 REA 引擎、Android SDK、桌面客户端或浏览器；可用平台能力取决于实际环境。只迁移已有规范时通常无需新增 REA 分析。
+## 标准交付
 
-## 包内结构
+固定消费者入口是`design-package.json`和`DESIGN_SPEC.md`，后续读取tokens、components、layouts、interactions、motion、assets与evidence模块，以及reference/comparison/adaptation入口。逻辑槽位和模块结构固定，具体路径可以映射。
 
-`skill/rea-style-library/`是可移植技能源，包含入口、UI元数据，以及研究/交付/迁移三份按需参考。根目录文档给人复制使用，不是某个软件的研究结果。
-
-以后每研究一个来源，单独创建研究仓库/profile；多来源库通过索引比较密度、排版、导航、反馈、引导等特征，避免把不同产品的规则无声混合。每份库都必须保留证据、未知和原版对照。
-
-本工具包不是风格已恢复的保证。实际运行受目标版本、平台、账号和工具能力影响；无法验证时只能交付清楚标注的部分结果。完整的“同公司产品感”需要在多页面、多状态和不同业务样本中检查。
-
-## 开发与验证
-
-格式、YAML、引用和调用元数据可用 Node.js 校验；开发依赖仅用于仓库检查，不是使用skill的前提。
+[格式协议](skill/rea-design-transfer/references/design-package.md) · [交付验收](skill/rea-design-transfer/references/deliverables.md) · [迁移流程](skill/rea-design-transfer/references/transfer.md)
 
 ```sh
-npm ci
-npm run validate
+node skill/rea-design-transfer/scripts/design-package.mjs init ./study --id my-product --name "My Product" --platform web --runtime browser --version "实际版本" --identity "实际URL或制品身份"
+node skill/rea-design-transfer/scripts/design-package.mjs validate ./study/design-package.json
 ```
 
-独立场景试用的范围与结果见[验证说明](docs/validation.md)。格式检查和受限试用不代表已对所有平台自动逆向成功。
+初始化生成draft，空模板不被当成研究或ready。检查器核对格式、相对路径、引用、A/B/C/D边界与真实SHA，不控制设备、不修改研究状态，也不证明像素/动效已经正确恢复。
+
+核心原版参数尚未知时保留coverage，目标替代明确为D；有可实施且经过对照的替代可说明迁移就绪范围。无法解决的核心设计缺口仍为partial。原版全部功能通过率不作为设计库的验收标准；用户另要求的功能清单独立处理。
+
+现有研究继续使用旧入口；新增适配包逐步映射，不重写原图和历史。总库可以用通用工具导出profile，再按其`study:add`与文件锁流程登记。普通UI工程、空模板和迁移样例不自动成为新的REA来源。
+
+## 可直接复制的任务
+
+[通用研究Prompt](通用研究Prompt.md) · [已有产品改造Prompt](改造软件Prompt.md)
+
+研究真实制品时委托已安装的[reverse-engineer-anything / REA](https://github.com/morluto/rea)，使用真实可用工具并保存输出；技能不会自动连接/安装引擎。只应用已有规范通常不需要新REA分析。
+
+原件保留与公开分发分别决定。保持研究仓库既有私有性，发布前检查实际Git差异/归档成员，不自动上传原包、账号profile、私人画面或受限资产。用户已经明确授权推送时，完成检查后执行，不重复索要相同许可。
+
+## 开发检查
+
+```sh
+npm ci --ignore-scripts
+npm run validate
+npm test
+```
+
+运行脚本本身无第三方运行依赖；开发格式校验使用锁定的YAML解析器。[验证说明](docs/validation.md)区分结构检查、合成契约测试和独立情境试用，均不冒充所有平台原版运行成功。

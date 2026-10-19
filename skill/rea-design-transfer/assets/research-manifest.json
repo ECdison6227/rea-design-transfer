@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "id": "example-profile",
+    "name": "Example profile; replace before use",
+    "sourceCategory": "unknown",
+    "sourceRuntime": "unknown",
+    "researchIdentity": {"status": "unknown", "evidenceRefs": []},
+    "git": {"remote": null, "commit": null, "branch": null, "dirty": null},
+    "launch": {"cwd": null, "commands": []}
+  },
+  "scope": {
+    "goal": "Record the user’s concrete goal before collecting evidence",
+    "mode": "style-and-core-flows",
+    "acceptanceCriteria": [],
+    "excluded": [],
+    "acceptedBoundaries": []
+  },
+  "delivery": {"status": "in_progress", "criteria": []},
+  "readiness": {"status": "not_assessed", "readyRules": [], "limitations": []},
+  "targets": [],
+  "runs": [],
+  "artifacts": [],
+  "captures": [],
+  "coverage": [],
+  "distribution": {"default": "deny", "files": []}
+}

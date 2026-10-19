@@ -1,11 +1,12 @@
 {
-  "name": "rea-style-library",
-  "version": "0.1.0",
+  "name": "rea-design-transfer",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "description": "REA-based product design language research and cross-product style transfer skill",
   "scripts": {
-    "validate": "node tools/validate-skill.mjs"
+    "validate": "node tools/validate-skill.mjs",
+    "test": "node --test skill/rea-design-transfer/scripts/check-manifest.test.mjs skill/rea-design-transfer/scripts/design-package.test.mjs"
   },
   "engines": {
     "node": ">=20"

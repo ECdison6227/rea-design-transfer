@@ -1,6 +1,0 @@
-interface:
-  display_name: "REA 产品风格库"
-  short_description: "研究手机、桌面和网站的设计语言、交互逻辑与用户引导，并迁移到其他业务"
-  default_prompt: "使用 $rea-style-library 研究我提供的软件或网站，调用已安装 REA 技能，提取可迁移的 UI/UX、行为规范和用户引导，交付有证据及对照的风格库。"
-policy:
-  allow_implicit_invocation: true
