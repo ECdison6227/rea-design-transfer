@@ -1,6 +1,6 @@
 interface:
   display_name: "REA 设计提取与迁移"
   short_description: "提取手机、桌面和网页产品的视觉规范与核心交互，标准化保存并应用到不同业务"
-  default_prompt: "使用 $rea-design-transfer 提取我指定产品的视觉设计与核心交互；核心界面需要认证时先请我登录并继续研究。应用规范时保留核心业务与数据，按目标UI逻辑轻量增删功能和调整文案。"
+  default_prompt: "使用 $rea-design-transfer 提取我指定产品的视觉设计与核心交互；核心界面需要认证时先请我登录并继续研究。应用规范时优先直接复用可用字体、图表、组件等资源，保留核心业务与数据，按目标UI逻辑轻量增删功能和调整文案。"
 policy:
   allow_implicit_invocation: true

@@ -2,7 +2,7 @@
 name: rea-design-transfer
 description: "Extract a reusable visual design system and core UI interaction patterns from mobile, desktop or web products using REA evidence; deliver a standard design package and apply a selected package to an existing product. Use for design extraction, design-spec libraries and cross-domain UI restyling, not default business-function cloning."
 metadata:
-  version: "1.0.2"
+  version: "1.0.3"
   repository: "https://github.com/ECdison6227/rea-design-transfer"
 ---
 
@@ -23,6 +23,7 @@ metadata:
 
 - **需要登录就先请用户登录**：实际研究的产品存在登录后核心界面时，必须主动提供可操作的登录入口，请用户完成正常登录，核对登录态后继续研究；不能只研究游客页就把登录当作未解决缺口收口。已有本任务可用的有效会话直接复用，不重复要求登录。等待时推进独立工作；用户已答应或正在登录时保留任务与页面，不能把等待超时视为拒绝。只有用户明确拒绝/延后、限定只研究公开页，或具体认证障碍确实无法解决时，才按该边界交付partial并记录恢复条件。详情见[研究](references/research.md)。
 - **按UI逻辑轻量增删改**：应用规范时同时审查目标的信息组织、操作顺序和文案；可合并或删除重复入口、补上必要的小功能/状态、调整导航和措辞，让设计与实际行为一致。保留用户明确约束、核心业务和数据，不把“保留业务”解释成所有按钮/功能/文字必须原样保留。具体范围和验收见[迁移](references/transfer.md)。
+- **能直接复用就直接复用**：先检查来源设计包与目标工程中已有的字体、图标、图表、组件、动效和布局；资源可取得、适配当前平台且在使用范围内时优先原样接入，必要时仅包装或小改。不要默认重画图标、换近似字体、重写现成图表/组件；确需替代时记录具体原因、来源与差异。详情见[迁移](references/transfer.md)。
 
 ## 研究重心与停止条件
 
