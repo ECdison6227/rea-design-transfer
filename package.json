@@ -1,6 +1,6 @@
 {
   "name": "rea-design-transfer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "type": "module",
   "description": "REA-based product design language research and cross-product style transfer skill",

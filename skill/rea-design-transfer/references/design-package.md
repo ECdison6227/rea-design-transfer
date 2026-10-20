@@ -33,6 +33,7 @@ init只写入指定目录，遇到任何已有入口文件即拒绝覆盖；不�
 根对象的format固定为`rea-design-package`，formatVersion为1，id为小写连字符slug，name为产品名。
 
 - `source`：platform为web/desktop/mobile，runtime、version、identity明确记录；capturedAt是实际采集ISO时间或null；researchMethod是实际REA方法说明，researchEvidenceRefs引用证据ID。未知可写unknown/not-recorded但不能冒充已完成。
+  认证影响核心设计时，在source附authentication说明是否需要登录、当前状态、验证时间/证据和覆盖条件，不存账号、凭据或cookie。用户登录完成后补相应运行证据；该字段本身不证明登录后设计已研究。
 - `scope`：mode默认visual-design-and-core-interactions，goal为本次目标，excludedBusiness列明不属于设计研究的原业务范围。
 - `readiness`：status为draft/partial/ready；supportedUses说明能如何使用，coreGaps是影响核心设计的缺口，optionalGaps保存业务未知/深入归因等可选边界。
 - `entries`：上表各逻辑入口的包根相对路径。
